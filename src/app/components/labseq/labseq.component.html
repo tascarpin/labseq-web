@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Labseq Calculator</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <label for="n">Enter n:</label>
+    <input type="number" [(ngModel)]="inputValue" name="n" required min="0" />
+    <button type="submit" [disabled]="loading">Calculate</button>
+  </form>
+
+  <div *ngIf="loading">Calculating...</div>
+  <div *ngIf="result">{{ result }}</div>
+  <div *ngIf="error" style="color:red;">{{ error }}</div>
+</div>

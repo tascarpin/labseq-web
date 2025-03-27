@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { LabseqComponent } from './components/labseq/labseq.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [LabseqComponent],
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'fibonacci-web';
+  title = 'labseq-web';
 }
