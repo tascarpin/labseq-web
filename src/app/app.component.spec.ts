@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'fibonacci-web' title`, () => {
+  it(`should have the 'labseq-web' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('fibonacci-web');
+    expect(app.title).toEqual('labseq-web');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, fibonacci-web');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, labseq-web');
   });
 });

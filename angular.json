@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fibonacci-web": {
+    "labseq-web": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/fibonacci-web",
+            "outputPath": "dist/labseq-web",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "fibonacci-web:build:production"
+              "buildTarget": "labseq-web:build:production"
             },
             "development": {
-              "buildTarget": "fibonacci-web:build:development"
+              "buildTarget": "labseq-web:build:development"
             }
           },
           "defaultConfiguration": "development"

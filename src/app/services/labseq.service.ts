@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-export interface FibonacciResponse {
+export interface LabseqResponse {
   n: number;
   result: string;
 }
@@ -15,7 +15,7 @@ export class LabseqService {
 
   constructor(private http: HttpClient) {}
 
-  calculate(n: number): Observable<FibonacciResponse> {
-    return this.http.get<FibonacciResponse>(`${this.baseUrl}/labseq/${n}`);
+  calculate(n: number): Observable<LabseqResponse> {
+    return this.http.get<LabseqResponse>(`${this.baseUrl}/labseq/${n}`);
   }
 }
